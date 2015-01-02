@@ -1,2 +1,5 @@
-<h3>Posts index</h3>
-{{outlet}}
+{{#each}}
+  <h4>{{title}}</h4>
+  <p>{{content}}</p>
+  - {{author}}
+{{/each}}
