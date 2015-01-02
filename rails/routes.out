@@ -1,0 +1,18 @@
+          Prefix Verb   URI Pattern                      Controller#Action
+    api_comments GET    /api/comments(.:format)          api/comments#index
+                 POST   /api/comments(.:format)          api/comments#create
+ new_api_comment GET    /api/comments/new(.:format)      api/comments#new
+edit_api_comment GET    /api/comments/:id/edit(.:format) api/comments#edit
+     api_comment GET    /api/comments/:id(.:format)      api/comments#show
+                 PATCH  /api/comments/:id(.:format)      api/comments#update
+                 PUT    /api/comments/:id(.:format)      api/comments#update
+                 DELETE /api/comments/:id(.:format)      api/comments#destroy
+       api_posts GET    /api/posts(.:format)             api/posts#index
+                 POST   /api/posts(.:format)             api/posts#create
+    new_api_post GET    /api/posts/new(.:format)         api/posts#new
+   edit_api_post GET    /api/posts/:id/edit(.:format)    api/posts#edit
+        api_post GET    /api/posts/:id(.:format)         api/posts#show
+                 PATCH  /api/posts/:id(.:format)         api/posts#update
+                 PUT    /api/posts/:id(.:format)         api/posts#update
+                 DELETE /api/posts/:id(.:format)         api/posts#destroy
+            root GET    /                                home#index
