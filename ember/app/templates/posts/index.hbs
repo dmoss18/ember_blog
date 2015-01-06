@@ -1,5 +1,10 @@
+<div class="page-header">
+  <h1>Posts</h1>
+</div>
+
 {{#each}}
-  <h4>{{title}}</h4>
-  <p>{{content}}</p>
-  - {{author}}
+  <div class="post-list-item">
+    <h4>{{link-to title 'posts.show'}} <small>{{author}}</small></h4>
+    <p>{{content}}</p>
+  </div>
 {{/each}}
